@@ -212,12 +212,12 @@ async def amain(TEXT, VOICE, OUTPUT_FILE) -> None:
 
 
 # -------- SenceVoice 语音识别 --模型加载-----
-model_dir = r"E:\2_PYTHON\Project\GPT\QWen\pretrained_models\SenseVoiceSmall"
+model_dir = r"D:\Coding\GitHub_Resuorse\iic_SenseVoiceSmall\SenseVoiceSmall"
 model_senceVoice = AutoModel( model=model_dir, trust_remote_code=True, )
 
 # --- QWen2.5大语言模型 ---
 # model_name = r"E:\2_PYTHON\Project\GPT\QWen\Qwen2.5-0.5B-Instruct"
-model_name = r"E:\2_PYTHON\Project\GPT\QWen\Qwen2.5-1.5B-Instruct"
+model_name = r"D:\Coding\GitHub_Resuorse\QWen_Model\Qwen2.5-1.5B-Instruct"
 # model_name = r'E:\2_PYTHON\Project\GPT\QWen\Qwen2.5-7B-Instruct-GPTQ-Int4'
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
